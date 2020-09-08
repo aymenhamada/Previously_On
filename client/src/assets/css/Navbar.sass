@@ -1,0 +1,78 @@
+body
+    background-color: rgba(20, 20, 20, 1)
+
+.dropdown-menu
+    left: -136px
+
+.nav-link
+    color: white !important
+
+a
+    outline: none
+
+.form-control
+    background-color: black
+    &:focus
+        background-color: black
+  
+label
+  position: relative
+  display: inline-block
+  background-color: black
+  padding: 5px 12px
+  transition: all 1s ease
+  border-radius: 0
+  &:hover
+    box-shadow: 1px 1px 5px rgba(255,255,255,0.5)
+  &::after
+    content: ''
+    display: block
+    height: 2px //taille de la barre
+    width: 80%
+    // background-color: #F0AD4E //barre en dessous
+    background-color: #fff
+    transition: all 1s ease 0.5s
+  input
+    transition: width 0.4s ease, opacity 0.5s ease 0.5s
+    opacity: 1
+    width: 200px
+    height: 30px
+    border: 0
+    outline: none
+    background-color: black
+    // color: darken(#F0AD4E, 25)
+    color: #fff
+  .loupe
+    position: absolute
+    top: 9px
+    right: 9px
+    cursor: pointer
+  &[data-searchbar="close"]
+    border-radius: 10px
+    padding: 5px 5px
+    transition: all 0.4s ease
+    &::after
+      width: 0%
+      transition: all 0.3s ease
+    .loupe
+      point-events: none
+    input
+      width: 28px
+      height: 30px
+      opacity: 0
+      cursor: pointer
+      transition: opacity 0.3s ease, width 0.6s ease
+      -webkit-appearance:none
+
+@media ( max-width: 400px )
+  .logo
+    visibility: hidden
+
+@media ( min-width: 520px )
+  .logo
+    visibility: visible
+  
+
+.nav-link
+    color: white !important
+    font-size: 1vw

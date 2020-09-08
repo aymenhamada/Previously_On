@@ -1,0 +1,124 @@
+p
+    color: white
+
+
+.meta-data p
+    font-weight: bold
+
+
+.showContainer
+    width: 200px
+    margin: 0 auto
+    cursor: pointer
+    margin-right: 10px
+
+.showContainer img
+    width: 100%
+
+.hidden
+    visibility: hidden
+
+button
+    z-index: auto
+
+h4
+    color: white
+    font-family: system-ui
+
+.slider
+    display: flex
+
+.marged
+    margin-bottom: 100px
+    margin: 0 auto
+    padding-left: 0px
+    padding-right: 0px
+    position: relative
+
+.marged img
+    width: 100%
+    height: auto
+    transition: opacity .5s ease-out
+    -moz-transition: opacity .5s ease-out
+    -webkit-transition: opacity .5s ease-out
+    -o-transition: opacity .5s ease-out
+    z-index: 2
+
+.here
+    //top: 25%
+    //left: 25%
+    background-color: #E50914
+
+
+img:hover
+    z-index: 4
+    transform: translate3d(0px, 0px, 0px)
+    transition-duration: 400ms
+    transition-delay: 0ms
+
+.info
+    position: absolute
+    top: 35%
+    left: 4%
+    display: block
+    max-width: 28%
+    z-index: 2
+
+h2
+    color: white
+
+.description
+    color: white
+    font-size: 1.1vw
+    z-index: 2
+
+.meta-data
+    display: flex
+    z-index: 2
+    color: #fff
+
+
+.score
+    font-weight: bold
+    color: #46D369
+    display: inline-block
+    white-space: nowrap
+
+.meta-data p
+    margin-right: 10px
+
+.vignette
+    position: absolute
+    z-index: 2
+    top: 0
+    bottom: 0
+    width: 30%
+    background-color: #000
+
+
+.vignette::before
+    content: ''
+    position: absolute
+    z-index: 10
+    background-image: linear-gradient(to right, #000, transparent)
+    top: 0
+    bottom: 0
+    left: 100%
+    width: 275px
+
+.d-flex .btn
+    margin-right: 15px
+    font-size: 1.0vw
+    font-weight: bold
+    margin-right: 0.75em
+    padding: 0.57em 1.35em
+    color: #fff
+    border: 1px solid rgba(255, 255, 255, 0.4)
+
+
+.d-flex span
+    text-transform: uppercase
+    font-size: 0.4vw
+
+body::-webkit-scrollbar
+    display: none
